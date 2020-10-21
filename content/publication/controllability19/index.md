@@ -2,7 +2,6 @@
 title: "A Dual Controllability Analysis of Influenza Virus-Host Protein-Protein Interaction Networks for Antiviral Drug Target Discovery"
 authors:
 - emily
-author_notes:
 date: 2019-03-04T00:00:00
 doi: ""
 
