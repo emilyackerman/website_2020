@@ -1,4 +1,44 @@
 /*************************************************
+ *  Academic's Core
+ *************************
+ *************************/
+
+html {
+  font-family: $sta-font-body, sans-serif;
+  font-size: #{$sta-font-size-small}px;
+  color: #011313
+  line-height: 1.65;
+}
+//@media screen and (min-width: 58em) {
+  //html {
+    //font-size: #{$sta-font-size}px;
+  //}
+//}
+
+body {
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  background-color: $sta-background;
+  margin-top: 70px; /* Offset body content by navbar height. */
+  padding-top: 0;
+  counter-reset: captions;
+}
+
+body.dark {
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: $sta-menu-text;
+  background-color: rgb(0,41,19)  !important;
+  margin-top: 70px; /* Offset body content by navbar height. */
+  padding-top: 0;
+  counter-reset: captions;
+}
+
+
+/*************************************************
  *  Buttons
  **************************************************/
 .btn {
