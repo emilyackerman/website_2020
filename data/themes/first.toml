@@ -8,15 +8,15 @@ light = true
 primary = "#505CCD" #blue
 
 # Menu
-menu_primary = "#FFEFE5" #peach 
+menu_primary = "#FFE9DB" #peach 
 menu_text = "#033B3A"  #dark green 
 menu_text_active = "#A30C4D" #pink
 menu_title = "#505CCD" #blue
 
 # Backgrounds
-background = "#FFEFE5"
-home_section_odd = "#FFEFE5"
-home_section_even = "#FFEFE5"
+background = "#FFE9DB"
+home_section_odd = "#FFE9DB"
+home_section_even = "#FFE9DB"
 
 dark_background = "#002913"
 dark_home_section_odd = "#002913"

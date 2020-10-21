@@ -5,7 +5,7 @@ name = "my_fonts"
 google_fonts = "Fira+Code|Inter|Miriam+Libre:wght@400;700|Karla|DM+Mono|Work+Sans|Calistoga|Alegreya:wght@900|Heebo|Vesper+Libre:wght@900|Padauk"
 
 # Font families
-heading_font = "Vesper"
+heading_font = "Vesper Libre"
 body_font = "Padauk" #Inter
-nav_font = "Vesper"
+nav_font = "Vesper Libre"
 mono_font = "DM Mono"
