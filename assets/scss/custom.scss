@@ -30,7 +30,7 @@ body {
     overflow: hidden;
     font-size: 1rem;
     letter-spacing: .03em;
-    color: $sta-menu-text;
+    color: $sta-primary;
 }
 
 .media.stream-item .article-style, .card-simple .article-style {
@@ -51,14 +51,14 @@ body {
 /* homepage section headers */
 .section-heading h1 {
   /*margin: 0 0 0px 0;*/
-  font-weight: 900 !important;
+  font-weight: 1200 !important;
   font-size: 2.8rem;
-  color: $sta-menu-text;
+  color: $sta-primary;
 }
 
 .dark .section-heading h1 {
   /*margin: 0 0 0px 0;*/
-  font-weight: 900;
+  font-weight: 1200;
   font-size: 2.8rem;
   color: $sta-menu-text;
 }
