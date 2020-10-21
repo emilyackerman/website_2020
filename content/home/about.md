@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear in.
 
-title = "Biograph"
+title = "Biography"
 
 # Choose the user profile to display
 # This should be the username of a profile in your `content/authors/` folder.
@@ -13,8 +13,6 @@ title = "Biograph"
 author = "emily"
 
 +++
-
-# Biography
 
 Emily Ackerman is a sixth year PhD student in the University of Pittsburgh's Chemical and Petroleum Engineering program. Her research includes controllability of influenza A and SARS-CoV-2 virus-host protein interaction networks and immune response modeling during influenza A infection. As a disabled, queer woman in STEM, she is passionate about the advancement of minorities in STEM fields. In her free time, she enjoys painting, organizing with her fellow grad workers, and spending time with her cat, Poppy.
 
