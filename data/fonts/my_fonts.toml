@@ -2,10 +2,10 @@
 name = "my_fonts"
 
 # Optional Google font URL
-google_fonts = "Fira+Code|Inter|Miriam+Libre:wght@400;700|Karla|DM+Mono|Work+Sans|Calistoga|Alegreya:wght@900|Heebo|Vesper+Libre:wght@900|Padauk|Galada|Goblin+One|Simonetta:wght@900"
+google_fonts = "Fira+Code|Inter|Miriam+Libre:wght@400;700|Karla|DM+Mono|Work+Sans|Calistoga|Alegreya:wght@900|Heebo|Vesper+Libre:wght@900|Padauk|Galada|Goblin+One|Corben:wght@700"
 
 # Font families
-heading_font = "Simonetta"
+heading_font = "Corben"
 body_font = "Padauk" #Inter
-nav_font = "Simonetta"
+nav_font = "Corben"
 mono_font = "DM Mono"
