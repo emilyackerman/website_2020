@@ -1,0 +1,788 @@
+/*************************************************
+ *  Academic's Core
+ *************************
+ *************************/
+
+html {
+  font-family: $sta-font-body, sans-serif;
+  font-size: #{$sta-font-size-small}px;
+  color: rgba(0,0,0,0.8);
+  line-height: 1.65;
+}
+//@media screen and (min-width: 58em) {
+  //html {
+    //font-size: #{$sta-font-size}px;
+  //}
+//}
+
+body {
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  background-color: $sta-background;
+  margin-top: 70px; /* Offset body content by navbar height. */
+  padding-top: 0;
+  counter-reset: captions;
+}
+
+body.dark {
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: $sta-menu-text;
+  background-color: rgb(0,41,19)  !important;
+  margin-top: 70px; /* Offset body content by navbar height. */
+  padding-top: 0;
+  counter-reset: captions;
+}
+
+.dark .home-section {
+  position: relative;  // Required for component positioning within section.
+  background-color: rgb(0,41,19)  !important; 
+  padding: 20px 0 50px 0;
+  animation: intro 0.3s both;
+  animation-delay: 0.15s;
+}
+
+.home-section {
+  position: relative;  // Required for component positioning within section.
+  background-color: $sta-home-section-odd;
+  padding: 20px 0 50px 0;
+  animation: intro 0.3s both;
+  animation-delay: 0.15s;
+}
+/*
+a,
+h2.article-title {
+  color: rgb(11,151,48); 
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+a,
+h2.article-title a:hover {
+  color: $sta-link-hover !important;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+a,
+h3.article-title {
+  color: $sta-link;
+  text-decoration: none; 
+  transition: color 0.6s ease;
+}
+
+a,
+h3.article-title a:hover {
+  color: $sta-link_hover;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+a:hover,
+a:focus {
+  color: $sta-link-hover;
+}
+*/ 
+.dark a,
+.dark h2.article-title {
+  color:  rgb(74, 233, 180) !important; 
+}
+
+/*
+.dark a,
+.dark h3.article-title {
+  color: rgb(74, 233, 180);
+  text-decoration: none;
+  transition: color 0.6s ease;
+} 
+
+.dark a:hover,
+.dark a:focus {
+  color: $sta-link-hover;
+}
+*/
+.section-heading p {
+  color: $sta-menu-primary
+}
+/*******************************
+* Hero 
+*******************************/ 
+/* change hero height */ 
+.wg-hero { 
+  padding: 3em 0;
+  clear: both;
+  height: 500px; 
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: intro 0.3s both;
+  animation-delay: 0s;
+  animation-delay: 0.25s;
+}
+
+@media only screen and (max-width: 400px) {
+  .wg-hero { 
+    height: 200 px;
+  }
+}
+
+/* Change hero title size and padding */
+.hero-title {
+  font-size: 10.1vmax; /*4rem;*/
+  margin-top: 3;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-title {
+    font-size: 8vmax;
+    margin-top: 7; 
+  }
+}
+
+/* Hero text color, add hero text shadow */
+.wg-hero.dark .hero-title,
+.wg-hero.dark .hero-lead,
+.wg-hero.dark .hero-cta-alt,
+.wg-hero.dark .hero-note > * {
+  color: #F5FFF0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* Uncomment to standout on complicated backgrounds. */
+}
+
+.dark .hero-title { 
+  margin-top: 3;
+}
+
+.wg-hero .btn-lg {
+  font-size: 1.2rem;
+  margin-top: 50;
+  border-radius: 0rem;
+} 
+
+/*******************************
+* For People Map
+*******************************/
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*******************************
+* Contact
+*******************************/
+
+/* change icon size */ 
+.contact-widget .fa-li {
+  position: absolute;
+  left: -3.14285714rem; /* Negative of `.contact-widget .fa-ul` margin. */
+  width: 2rem; /* Match `fa-2x` icon size. */
+  top: 0.14285714em; /* Default FA value. */
+  text-align: center;
+  text-size: 1.0rem; 
+}
+
+.contact-widget li {
+  padding-top: 1.4rem; /* Align text with bottom of `fa-2x` icon. */
+  margin-bottom: 0.3rem;
+}
+
+/*******************************
+* Navigation Bar 
+*******************************/
+
+.navbar {
+  height: 70px;
+  background: $sta-menu-primary;
+  box-shadow: none;
+  font-size: 22px;
+  font-weight: 900 !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+  // Remove Bootstrap's navbar v-padding and assign v-padding to logo separately to maximise logo size.
+  // Otherwise, Bootstrap's navbar v-padding causes issue with logo fitting within fixed 50px height bar in md-lg sizes.
+  padding: 0 1rem;
+
+} 
+
+.dark .navbar {
+  background: rgb(0,41,19) !important;
+}
+
+  .nav-item {
+    // For z-index compatibility with logo on mobile layout, otherwise nav-item can't be clicked when logo present.
+    position: relative;
+
+  // Note: dedicated `dropdown-item-active` class to prevent ScrollSpy removing `active` class from language chooser.
+  .dropdown-item.active,
+  .dropdown-item-active {
+    font-weight: bold;
+    color: $sta-menu-text-active !important;
+  }  
+
+} 
+
+  .dark .nav-item {
+    // For z-index compatibility with logo on mobile layout, otherwise nav-item can't be clicked when logo present.
+    position: relative;
+
+  // Note: dedicated `dropdown-item-active` class to prevent ScrollSpy removing `active` class from language chooser.
+  .dark .dropdown-item.active,
+  .dark .dropdown-item-active {
+    font-weight: bold;
+    color: $sta-menu-text-active !important;
+  }
+
+}
+
+@include media-breakpoint-down(md) {
+  // Used in conjunction with mobile .navbar-brand to center logo on mobile.
+  .navbar-collapse {
+    z-index: 1031 !important;  // Appear just over navbar.
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    background-color: rgb(0,41,19);
+    text-align: center !important;
+  }
+  .dark .navbar-collapse {
+    background-color: rgb(0,41,19);
+  }
+}
+
+  .navbar-nav {
+    display: flex;
+
+    .nav-link {
+      color: $sta-menu-text !important;
+
+      &.active,
+      &:hover,
+      &:focus {
+        color: $sta-menu-text-active !important;
+      }
+
+      &.active {
+        font-weight: bold !important;
+        color: $sta-menu-text-active !important;
+      }
+    }
+  }
+
+/*******************************
+* Section header titles
+*******************************/
+
+.article-container {
+  max-width: 960px;
+  padding: 0 20px 0 20px;
+  margin: 0 0.5 0 1;
+}
+
+/* homepage section headers */
+.section-heading h1 {
+  /*margin: 0 0 0px 0;*/ 
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: $sta-menu-primary;
+}
+
+.dark .section-heading h1 {
+  /*margin: 0 0 0px 0;*/ 
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: $sta-menu-text;
+}
+
+.dark .section-heading h2 {
+  color: $sta-menu-text;
+}
+
+/*************************************************
+ * Talks
+ **************************************************/
+
+.talk-metadata h2 {
+  color: #4b4f56;
+  font-size: 1rem;
+}
+
+/*************************************************
+ * Twitter
+ **************************************************/
+.twitter-timeline {
+    width: 50vw !important;
+    height:200px;
+    padding:20px;
+    background:#F5FFFA;
+    border-radius:3px;
+    box-shadow:2px 2px 3px rgba(0,0,0,.1);
+}
+
+
+/*************************************************
+ *  Compact (stream) list view
+ **************************************************/
+
+.media.stream-item {
+  margin-bottom: 2rem;
+}
+
+.media.stream-item .article-title,
+.card-simple .article-title {
+  font-size: 2rem;
+}
+
+.dark .media.stream-item .article-title,
+.card-simple .article-title {
+  font-size: 2rem;
+  color: pink !important;   
+}
+
+.media.stream-item .article-style,
+.card-simple .article-style {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+/*************************************************
+ *  People widget
+ **************************************************/
+
+.people-widget {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.people-widget .portrait-title h2 {
+  font-size: 1.6rem;
+}
+
+.dark .portrait-title h2 {
+  color:  rgb(74, 233, 180) !important;  
+  font-size: 2rem;
+}
+
+.people-widget .portrait-title h3 {
+  font-size: 1.3rem;
+}
+
+.dark .portrait-title h3 {
+  color: rgb(245, 255, 250) !important;
+  font-size: 1.5rem;
+}
+
+.people-widget .avatar {
+  width: 80%;
+  max-width: 150px;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .people-widget .col-sm-auto {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .people-widget .col-sm-auto {
+    width: 20%;
+  }
+}
+
+/* social icons*/ 
+ul.network-icon {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+/*************************************************
+ *  Author profile card
+ **************************************************/
+
+.author-card .avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.author-card .card-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: rgb(0, 41, 19);
+}
+
+.author-card .card-title a {
+  color: rgb(0, 41, 19);
+}
+
+.dark .author-card .card-title,
+.dark .author-card .card-title a {
+  color: rgb(245, 255, 250);
+}
+
+.author-card p {
+  margin-bottom: 5px;
+}
+
+.author-card .card-subtitle {
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgba(0, 41, 19, 0.24);
+  margin-bottom: 7px;
+}
+
+.dark .card-subtitle {
+  color: rgb(245, 255, 250);
+}
+
+.author-card .card-text {
+  color: rgba(0, 41, 19, 0.99);
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.dark .card-text {
+  color: rgb(245, 255, 250);
+}
+
+/*************************************************
+ * Author page
+ **************************************************/
+
+.portrait-title h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(0,0,0, 0.54);
+  margin: 0px 0 10px 0;
+}
+
+ul.ul-interests li {
+  font-size: 1.3rem;
+}
+
+ul.ul-edu li {
+  position: relative;
+  padding: 0px 15px 4px 3px;
+}
+
+ul.ul-edu li .description p {
+  margin: 0;
+  font-size: 1.3rem; 
+}
+
+ul.ul-edu li .description p.course {
+  font-size: 1.3rem;
+}
+
+ul.ul-edu li .description p.institution {
+  font-size: 1.3rem;
+  color: $sta-menu-primary;
+}
+
+/*************************************************
+ * Icons 
+ **************************************************/
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+}
+.svg-icon {
+  height:1.1em;
+  width:1.1em;
+}
+.svg-icon.svg-baseline {
+  bottom: 0.1em;
+  line-height: 1;
+  position: relative;
+}
+
+/*************************************************
+ *  Footer
+ **************************************************/
+
+footer {
+  margin: 4rem 0 0;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+/*************************************************
+ *  Button size override
+ *************************************************/
+
+.btn {
+  background-color: $sta-menu-primary; 
+  padding: .5rem;
+  font-size: .8rem;
+  line-height: .9;  // Anything less and multiline button text may overlap.
+  border-radius: 0rem;
+  color: $sta-menu-text;
+
+  @include hover() {
+  background-color: $sta-menu-text-active;
+  color: $sta-menu-text; 
+  text-decoration: none;
+}
+}
+
+.dark .btn {
+  background-color: $sta-menu-text; 
+  padding: .5rem;
+  font-size: .8rem;
+  line-height: .9;  // Anything less and multiline button text may overlap.
+  border-radius: 0rem;
+  color: $sta-menu-primary !important;
+  
+  @include hover() {
+  background-color: $sta-primary;
+  color: $sta-menu-primary !important;
+  text-decoration: none;
+}
+
+.btn-links .btn {
+  padding: 5px .5rem 5px .5rem;
+  line-height: 1;
+}
+} 
+
+.btn.btn-sm {
+  padding: 5px .4rem 5px .4rem;
+  font-size: .6rem;
+  border-radius: .2rem;
+}
+
+.btn.btn-lg {
+  padding: 5px .4rem 5px .4rem;
+  font-size: 1.2rem;
+  border-radius: 0rem;
+}
+
+.btn.btn-link {
+  color: rgb(245,255,250) !important;
+}
+
+/*************************************************
+ *  dropdown
+ *************************************************/
+
+.dark .dropdown-menu {
+  background-color: $sta-menu-primary !important;
+  color: $sta-menu-text !important;
+  z-index: 1032;  // I18n dropdown over mobile expanded menu.
+}
+
+.dark .dropdown-item {
+  background-color: $sta-menu-primary !important;
+  color: $sta-menu-text !important;
+}
+
+/*************************************************
+ *  _dark
+ *************************************************/
+
+body.dark,
+.dark .docs-toc-link,
+.dark .docs-sidebar .nav > li:not(.active) > a,
+.dark .modal button.close,
+.dark input,
+.dark .form-control,
+.dark .form-control:focus {
+  color: rgb(245,255,250);
+  background: rgb(0,41,19);
+}
+
+.dark .form-control {
+  background-color: rgb(245,255,250);
+}
+
+.dark .form-control:focus {
+  background-color: rgb(245,255,250);
+  border-color: rgb(74, 233, 180);
+  box-shadow: 0 0 0 .2rem $sta-primary-dark;
+}
+
+.dark .section-heading p {
+  color: rgb(245, 255, 250);
+}
+
+.dark h1 {
+  color: rgb(245, 255, 250);
+}
+.dark h2 {
+  color: rgb(74, 233, 180);
+}
+
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: rgb(245, 255, 250);
+}
+
+
+/*************************************************
+ *  Article Alerts (Shortcode) and Asides (Mmark)
+ **************************************************/
+
+/* Style asides as Bootstrap alerts. */
+.article-style aside {
+  @extend .alert;
+}
+
+/* Asides use <p> block element whereas alerts use <div>. */
+.article-style aside p,
+div.alert > div {
+  position: relative;
+  display: block;
+  font-family: $sta-font-heading;
+  font-size: 1.8rem;
+  margin-left: .1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+div.alert div > * {
+  margin-bottom: .5rem;  /* Use smaller paragraph spacing than usual. */
+}
+
+div.alert div > :last-child {
+  margin-bottom: 0;
+}
+
+.article-style aside p::before,
+div.alert > div:first-child::before {
+  position: none;
+  top: -0.5rem;
+  left: -1.5rem;
+  font-size: 1.5rem;
+  color: #209cee;
+  font-family: $sta-font-heading; 
+  font-weight: 0;
+  content: '';
+  width: 0rem;
+  text-align: center;
+}
+
+div.alert-warning > div:first-child::before {
+  font-family: $sta-font-heading;
+  font-weight: 0;
+  color: #ff3860;
+  content: '';
+}
+
+.article-style aside a,
+div.alert a {
+  color: $sta-primary;
+  text-decoration: none;
+  border-bottom: solid 1px currentColor;
+}
+
+.article-style aside,
+.alert-note {
+  color: #002913;
+  background-color: #EBFFF5;
+  border-color: $sta-primary;
+}
+
+.alert-warning {
+  color: #002913;
+  background-color: #EBFFF5;
+  border-color: $sta-primary;
+}
+
+.dark .article-style aside,
+.dark .alert-note {
+  color: $sta-menu-text;
+  background-color: #00140A;
+  border-color: rgb(74, 233, 180);
+}
+
+.dark .alert-warning {
+  color: $sta-menu-text;
+  background-color: #00140A;
+  border-color: rgb(74, 233, 180);
+}
+
+
+/*************************************************
+ *  NEW Motto class
+ *************************************************/
+
+.motto {
+  text-align: center;
+  font-size: 1.6rem; 
+}
+
+/*************************************************
+ *  NEW date font class
+ *************************************************/
+
+.date {
+  font-size: 1.4rem;
+  color: rgb(245, 255, 250) !important;
+}
+
+.date-dark {
+  font-size: 1.4rem;
+  color: $sta-menu-primary !important;
+}
+
+.date-dark-lg {
+  font-size: 1.6rem;
+  color: $sta-menu-primary !important;
+}
+
+.dark .date-dark, 
+.dark .date-dark-lg {
+  font-size: 1.4rem;
+  color: rgb(245, 255, 250) !important;
+}
+
+/*************************************************
+ *  NEW lead font class
+ *************************************************/
+
+.lead {
+  font-size: 1.6rem;
+  line-height: 0.9
+}
+
+/*************************************************
+ *  NEW abstract-left
+ *************************************************/
+
+.abstract-right {
+  margin-right: 0.1rem; 
+}
