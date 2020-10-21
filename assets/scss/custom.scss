@@ -33,6 +33,11 @@ body {
     color: $sta-menu-text;
 }
 
+.media.stream-item .article-style, .card-simple .article-style {
+    margin-top: 2px;
+    font-size: 1.1rem;
+}
+
 /*******************************
 * Section header titles
 *******************************/
