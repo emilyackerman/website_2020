@@ -46,7 +46,7 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-12-14"
   date_end = ""
-  description = "A Dual Controllability Analysis of In uenza Virus-Host Protein-Protein Interaction Networks for Antiviral Drug Target Discovery"
+  description = "A Dual Controllability Analysis of Influenza Virus-Host Protein-Protein Interaction Networks for Antiviral Drug Target Discovery"
 
 [[item]]
   organization = "Department of Chemical Engineering, University of Pittsburgh"
@@ -56,6 +56,6 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2019-2-14"
   date_end = ""
-  description = ”Network Methods for Identifying Regulators of In uenza A Virus”
+  description = "Network Methods for Identifying Regulators of Influenza A Virus"
 
 +++
