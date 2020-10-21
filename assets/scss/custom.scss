@@ -25,6 +25,13 @@ body {
   counter-reset: captions;
 }
 
+.article-metadata {
+    margin-bottom: 15px;
+    overflow: hidden;
+    font-size: 1.3rem;
+    letter-spacing: .03em;
+    color: $sta-menu-text;
+}
 
 /*******************************
 * Section header titles
@@ -114,8 +121,14 @@ body {
 }
 
 /*************************************************
- *  Skill
+ *  Featurette
  **************************************************/
+.featurette {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: $sta-menu-text;
+    text-align: center;
+}
 
 .featurette h3 {
     margin-top: 0;
