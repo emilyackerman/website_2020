@@ -46,4 +46,50 @@ date_format = "Jan 2006"
   * Modelling
   * Deploying"""
 
+[[experience]]
+  title = "Ph.D. Candidate"
+  company = "Shoemaker Immunosystems Lab, University of Pittsburgh"
+  company_url = "shoemakerlab.pitt.edu"
+  location = "Pittsburgh, PA"
+  date_start = "2015-08-25"
+  date_end = ""
+  description = """Ph.D. in Chemical Engineering
+  Responsibilities include:
+
+  * Analysing
+  * Modelling
+  * Deploying
+  """
+
+[[experience]]
+  title = "Board of Directors"
+  company = "Future of Research"
+  company_url = "futureofresearch.org"
+  location = ""
+  date_start = "2020-08-25"
+  date_end = ""
+  description = """Co-director of the Labor Task Force, investigating labor conditions of early career researchers 
+  Responsibilities include:
+
+  * Analysing
+  * Modelling
+  * Deploying
+  """
+
+[[experience]]
+  title = "Co-founder,  Executive Board Member"
+  company = "TAE (Transforming Academic Ecosystems) Consortium"
+  company_url = "taeconsortium.netlify.com"
+  location = ""
+  date_start = "2020-01-25"
+  date_end = ""
+  description = """An initiative based group of ECR's aiming to redefine the conversation around mental health in academia, particularly by supporting the unique needs of underrepresented researchers.
+  Website and Social Media initiative lead
+  Responsibilities include:
+
+  * Analysing
+  * Modelling
+  * Deploying
+  """
+
 +++
