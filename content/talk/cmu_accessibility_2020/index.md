@@ -1,5 +1,5 @@
 ---
-date: "2018-04-02T12:00:00"
+date: "2020-04-02T13:00:00"
 publishDate: "2020-04-02T13:00:00"
 buildFuture: true 
 title: "The Accessibility Gap for Tech Users and Developers"
