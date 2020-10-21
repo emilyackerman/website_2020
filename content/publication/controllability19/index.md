@@ -27,7 +27,7 @@ featured: false
 
 # links:
 # - name: ""
-url: "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2917-z"
+url: 'https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2917-z'
 url_pdf: ''
 url_code: ''
 url_dataset: ''
