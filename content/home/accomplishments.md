@@ -54,7 +54,7 @@ date_format = "Jan 2006"
   title = "OXE Research Award, Best Oral Presentation, Chemical Engineering Department Research Day"
   url = ""
   certificate_url = ""
-  date_start = "2019-2-14"
+  date_start = "2019-02-14"
   date_end = ""
   description = "Network Methods for Identifying Regulators of Influenza A Virus"
 
