@@ -3,6 +3,8 @@ date: "2018-02-01T09:15:00"
 publishDate: "2018-09-22T09:15:00"
 buildFuture: true 
 title: "Controllability of the Influenza Virus-Host Protein-Protein Interaction Network: Engineering Insights into Host-Virus Interactions"
+event: "AICHE 2018"
+location: "Pittsburgh, PA"
 draft: false  
 share: false
 commentable: false
