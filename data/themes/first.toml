@@ -10,7 +10,7 @@ primary = "#505CCD" # "#0B9730"
 # Menu
 menu_primary = "#FFE8D3" #dark green 
 menu_text = "#033B3A"  #light green
-menu_text_active = "#505CCD" # "#06BC39" #bright green
+menu_text_active = "#A30C4D" # "#06BC39" #bright green
 menu_title = "#505CCD" #light green
 
 # Backgrounds
