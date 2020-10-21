@@ -32,7 +32,7 @@
       <div class="col py-2">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">{{.title | markdownify | emojify}}</h4>
+            <h4 class="card-title exp-title text-muted mt-0">{{.title | markdownify | emojify}}</h4>
 	    {{if .degree}}
 	    	<h4 class="card-title exp-title text-muted mt-0 mb-1">{{.degree | markdownify | emojify}}</h4>
 		{{end}}
@@ -45,9 +45,6 @@
                 {{ (time .date_end).Format ($page.Params.date_format | default "January 2006") }}
               {{else}}
                 {{ i18n "present" | default "Present" }}
-              {{end}}
-              {{ if .degree}}
-                {{.}}
               {{end}}
 	      {{with .location}}
                 <span class="middot-divider"></span>

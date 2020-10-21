@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   location = "Troy, NY"
   date_start = "2011-08-25"
   date_end = "2015-05-29"
-  description = """B.S. in Chemical Engineering  
+  description = """  
   Responsibilities include:
   
   * Analysing
@@ -52,9 +52,10 @@ date_format = "Jan 2006"
   company = "Shoemaker Immunosystems Lab, University of Pittsburgh"
   company_url = "shoemakerlab.pitt.edu"
   location = "Pittsburgh, PA"
+  degree = "Ph.D. in Chemical Engineering"
   date_start = "2015-08-25"
   date_end = ""
-  description = """Ph.D. in Chemical Engineering
+  description = """
   Responsibilities include:
 
   * Analysing
