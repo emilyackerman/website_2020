@@ -28,14 +28,14 @@ featured: false
 
 # links:
 # - name: ""
-url: https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2917-z
+#   url: ""
 url_pdf: https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2917-z
 url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
-url_source: ''
+url_source: https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2917-z
 url_video: ''
 
 # Featured image
