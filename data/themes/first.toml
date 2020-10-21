@@ -1,28 +1,28 @@
 # Theme metadata
-name = "reef"
+name = "first"
 
 # Is theme light or dark?
 light = true
 
 # Primary
-primary = "#505CCD" # "#0B9730"
+primary = "#505CCD" #blue
 
 # Menu
-menu_primary = "#FFE8D3" #dark green 
-menu_text = "#033B3A"  #light green
-menu_text_active = "#A30C4D" # "#06BC39" #bright green
-menu_title = "#505CCD" #light green
+menu_primary = "#FFEFE5" #peach 
+menu_text = "#033B3A"  #dark green 
+menu_text_active = "#A30C4D" #pink
+menu_title = "#505CCD" #blue
 
 # Backgrounds
-background = "#FFE8D3"
-home_section_odd = "#FFE8D3"
-home_section_even = "#FFE8D3"
+background = "#FFEFE5"
+home_section_odd = "#FFEFE5"
+home_section_even = "#FFEFE5"
 
 dark_background = "#002913"
 dark_home_section_odd = "#002913"
 dark_home_section_even = "#002913"
 
-link = "#505CCD" # "#06BC39" #bright green 
-link_hover = "#A30C4D" #blue
+link = "#505CCD" #blue 
+link_hover = "#A30C4D" #pink
 dark_link = "00F646" 
 dark_link_hover = "#1BB1DA" #blue
