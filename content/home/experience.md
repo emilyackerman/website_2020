@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   location = "Troy, NY"
   date_start = "2011-08-25"
   date_end = "2015-05-29"
-  description = """B.S. in Chemical Engineering
+  description = """B.S. in Chemical Engineering  
   Responsibilities include:
   
   * Analysing
@@ -39,6 +39,11 @@ date_format = "Jan 2006"
   location = "Rensselaer, NY"
   date_start = "2015-06-01"
   date_end = "2015-08-15"
-  description = """Computer-Aided Drug Discovery (CADD) department under Dr. Douglas Kitchen"""
+  description = """Computer-Aided Drug Discovery (CADD) department under Dr. Douglas Kitchen  
+  Responsibilities include:
+  
+  * Analysing
+  * Modelling
+  * Deploying"""
 
 +++
