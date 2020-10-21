@@ -15,22 +15,22 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "R"
-  description = "90%"
+  icon = "Mathematical Modeling"
+  icon_pack = "fas"
+  name = "calculator"
+  description = "MCMC parameter fitting methods for ODE models of the immune response to viral infection"
   
 [[feature]]
-  icon = "chart-line"
+  icon = "project-diagram"
   icon_pack = "fas"
-  name = "Statistics"
-  description = "100%"  
+  name = "Network Biology"
+  description = "Virus-host protein networks to identify disease host factors and drug opportunities"  
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "users"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Diversity and Equity Work"
+  description = "Dedication to improving the academic environment"
 
 # Uncomment to use emoji icons.
 # [[feature]]
