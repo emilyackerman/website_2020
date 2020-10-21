@@ -8,7 +8,7 @@ share: false
 commentable: false
 editable: false
 
-summary: 
+summary: ""
 
 links:
 - name: Abstract
