@@ -23,13 +23,12 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags:
-- Source Themes
+
 featured: false
 
 # links:
 # - name: ""
-#   url: ""
+url: https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2917-z
 url_pdf: https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2917-z
 url_code: ''
 url_dataset: ''
