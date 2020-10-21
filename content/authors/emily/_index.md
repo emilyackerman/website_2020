@@ -18,7 +18,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: 
+bio: Sixth year Ph.D candidate in Chemical Engineering looking toward a future professorship with special interest in the advancement of underrepresented groups 
 
 interests:
 - Systems biology
