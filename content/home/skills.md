@@ -15,9 +15,9 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "Mathematical Modeling"
+  icon = "calculator"
   icon_pack = "fas"
-  name = "calculator"
+  name = "Mathematical Modeling"
   description = "MCMC parameter fitting methods for ODE models of the immune response to viral infection"
   
 [[feature]]
