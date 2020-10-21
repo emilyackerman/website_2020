@@ -3,7 +3,7 @@ title: "A Dual Controllability Analysis of Influenza Virus-Host Protein-Protein 
 authors:
 - emily
 author_notes:
-date = 2019-03-04T00:00:00
+date: 2019-03-04T00:00:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
