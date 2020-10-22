@@ -35,8 +35,9 @@ h1.about-name {
 
 h2.about-name {
   font-size: 1.4rem;
-  font-family: Paduak;
-  color: $sta-primary; 
+  font-family: $sta-font-body, sans-serif;
+  color: $sta-primary;
+  margin-top: 10px;  
 }
 
 
