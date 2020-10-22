@@ -25,6 +25,10 @@ body {
   counter-reset: captions;
 }
 
+ol {
+  padding-left: 2rem;
+}
+
 h1.about-name {
   font-size: 1.6rem; 
 }
