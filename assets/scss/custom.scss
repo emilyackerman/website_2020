@@ -139,18 +139,19 @@ h3 {
 
 .card-title {
     font-size: 1.2rem; 
-    margin-bottom: .2rem !important;
+    margin-bottom: .02rem !important;
 }
 
 .card h4 {
     font-size: 1.2rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.1;
     text-transform: uppercase;
 }
 
 .exp-meta {
     font-size: 1.1rem;
+    color: $sta-primary; 
 }
 
 .experience .card-text, .experience .card-text p {
