@@ -50,10 +50,6 @@ h3 {
     transition: color .6s ease;
 }
 
-.media.stream-item .article-title, .card-simple .article-title {
-    font-size: 1.2rem;
-}
-
 .media.stream-item .article-style, .card-simple .article-style {
     margin-top: 2px;
     font-size: 1.1rem;
@@ -62,6 +58,10 @@ h3 {
 .fab, .far {
     font-weight: 800;
 }
+
+.home-section {
+    padding: 30px 0 30px 0;
+  }
 
 /*******************************
 * Section header titles
@@ -139,7 +139,7 @@ h3 {
 
 .media.stream-item .article-title,
 .card-simple .article-title {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 /*************************************************
