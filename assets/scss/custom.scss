@@ -38,6 +38,10 @@ body {
     font-size: 1.1rem;
 }
 
+.fab, .far {
+    font-weight: 800;
+}
+
 /*******************************
 * Section header titles
 *******************************/
@@ -53,7 +57,7 @@ body {
   /*margin: 0 0 0px 0;*/
   font-weight: 1200 !important;
   font-size: 2.8rem;
-  color: $sta-menu-text-active;
+  color: $sta-menu-text;
 }
 
 .dark .section-heading h1 {

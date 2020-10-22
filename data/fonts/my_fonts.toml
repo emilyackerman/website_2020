@@ -5,7 +5,7 @@ name = "my_fonts"
 google_fonts = "Fira+Code|Inter|Miriam+Libre:wght@400;700|Karla|DM+Mono|Work+Sans|Calistoga|Alegreya:wght@900|Heebo|Vesper+Libre:wght@900|Padauk|Galada|Goblin+One|Corben:wght@700|Bevan|Abril+Fatface|Patua+One"
 
 # Font families
-heading_font = "Patua One" #or Alegreya
+heading_font = "Alegreya" #"Patua One" #or Alegreya
 body_font = "Padauk" #Inter
-nav_font = "Patua One"
+nav_font = "Alegreya" #"Patua One"
 mono_font = "DM Mono"
