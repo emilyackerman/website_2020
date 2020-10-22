@@ -157,8 +157,11 @@ h3 {
     transition: all .2s ease-out;
 }
 
-#bootstrap-overrides .text-muted {
-    color: inherit;
+.card-about {
+    box-shadow: 0 2px 4px 0 #2196ba;
+    border: 1px solid $sta-primary;
+    border-radius: 10px;
+    background: $sta-background;
 }
 
 .card-title {
