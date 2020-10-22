@@ -25,8 +25,9 @@ body {
   counter-reset: captions;
 }
 
-ol {
-  padding-left: 2rem;
+ul {
+  margin-left: 2em; 
+  padding-left: 2em;
 }
 
 h1.about-name {
@@ -172,6 +173,10 @@ h3 {
     border-radius: 10px;
     background: $sta-background;
 }**/ 
+
+.bio-padding {
+    padding: 1rem; 
+}
 
 .card-title {
     font-size: 1.2rem; 
