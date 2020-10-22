@@ -142,7 +142,8 @@ h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     background: $sta-background;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 $sta-primary;
+    border: 1px solid $sta-primary;
     transition: all .2s ease-out;
 }
 
