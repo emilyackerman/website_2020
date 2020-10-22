@@ -26,11 +26,26 @@ date_format = "Jan 2006"
   date_start = "2011-08-25"
   date_end = "2015-05-29"
   description = """  
-  Responsibilities include:
+  Experience in:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Traditional chemical engineering curriculum
+  * Process controls modeling in Simulink, Aspen Plus
+  * Bioprocessing laboratory
+  """
+
+[[experience]]
+  title = "Undergraduate Researcher"
+  company = "Rensselaer Polytechnic Institute"
+  company_url = ""
+  location = "Troy, NY"
+  date_start = "2013-05-25"
+  date_end = "2015-05-29"
+  description = """Awarded funding to participate in the Undergraduate Research Program under Dr. Curt Breneman  
+  Research accomplishments:
+  
+  * Identified ligands to inhibit HIV GP120-CD4 binding using high-throughput screening methods
+  * Developed novel super- exible docking/scoring method with binding site comparison in Autodock Vina and MOE
+  * Assisted small team in writing an R21 NIH grant proposal
   """
 
 [[experience]]
@@ -41,11 +56,11 @@ date_format = "Jan 2006"
   date_start = "2015-06-01"
   date_end = "2015-08-15"
   description = """Computer-Aided Drug Discovery (CADD) department under Dr. Douglas Kitchen  
-  Responsibilities include:
+  Responsibilities:
   
-  * Analysing
-  * Modelling
-  * Deploying"""
+  * Development of in-house docking/scoring methods for protein interactions 
+  * Optimization and automation of all methods for department-wide use
+  """
 
 [[experience]]
   title = "Ph.D. Candidate"
@@ -56,11 +71,17 @@ date_format = "Jan 2006"
   date_start = "2015-08-25"
   date_end = ""
   description = """
-  Responsibilities include:
+  Experience:
 
-  * Analysing
-  * Modelling
-  * Deploying
+  * Chemical Engineering and Systems Biology curriculum
+  * President, Graduate Women in Engineering Network
+  * Organizer, Graduate Student Unionization Campaign 
+
+  Research accomplishments:
+
+  * Identified host factors of influenza infection using virus-host protein network topology and controllability analyses
+  * Prioritized drug repositioning candidates for SARS-CoV-2 infection using network controllability methods
+  * Developed model of immune response to influenza infection and software to perform shared parameter fitting on multiple data sets.
   """
 
 [[experience]]
@@ -70,12 +91,12 @@ date_format = "Jan 2006"
   location = ""
   date_start = "2020-08-25"
   date_end = ""
-  description = """Co-director of the Labor Task Force, investigating labor conditions of early career researchers 
-  Responsibilities include:
+  description = """Co-director of the Labor Task Force, investigating labor conditions of early career researchers
+ 
+  Responsibilities:
 
-  * Analysing
-  * Modelling
-  * Deploying
+  * Perform large scale survey of workplace conditions for academic early career researchers (in progress)
+  * Work with Board of Directors and Executive Board to empower junior researchers through equitable, grassroots action
   """
 
 [[experience]]
@@ -86,12 +107,14 @@ date_format = "Jan 2006"
   date_start = "2020-01-25"
   date_end = ""
   description = """An initiative based group of ECR's aiming to redefine the conversation around mental health in academia, particularly by supporting the unique needs of underrepresented researchers.
+  
   Website and Social Media initiative lead
-  Responsibilities include:
 
-  * Analysing
-  * Modelling
-  * Deploying
+  Responsibilities:
+
+  * Hold weekly meetings to guide and act on initiatives. 
+  * Create and maintain website and social media
+  * Organized mental health sessions at the Howard Hughes Medical Institute's 2020 Gilliam Fellowship meeting
   """
 
 +++
