@@ -39,7 +39,7 @@
 		<h4 class="card-title exp-company my-0">
               {{- with .company_url}}<a href="{{.}}" target="_blank" rel="noopener">{{end}}{{.company | markdownify | emojify}}{{with .company_url}}</a>{{end -}}
             </h4>
-            <div class="text-muted exp-meta">
+            <div class="exp-meta">
               {{ (time .date_start).Format ($page.Params.date_format | default "January 2006") }} –
               {{ if .date_end}}
                 {{ (time .date_end).Format ($page.Params.date_format | default "January 2006") }}
