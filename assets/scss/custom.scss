@@ -25,6 +25,11 @@ body {
   counter-reset: captions;
 }
 
+h1.about-name {
+  font-size: 1.6rem; 
+}
+
+
 h1 {
   font-weight: 900; 
   color: $sta-menu-text; 
