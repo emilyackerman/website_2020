@@ -158,7 +158,7 @@ h3 {
 }
 
 .card-about {
-    box-shadow: 0 2px 4px 0 #2196ba;
+    box-shadow: 0 2px 4px 0 $sta-primary;
     border: 1px solid $sta-primary;
     border-radius: 10px;
     background: $sta-background;
@@ -328,7 +328,7 @@ h3 {
   background: $sta-menu-primary;
   background-image: url();
   box-shadow: none;
-  font-size: 1.3rem; 
+  font-size: 1.1rem; 
   font-weight: 900 !important;
   position: fixed;
   top: 0;
