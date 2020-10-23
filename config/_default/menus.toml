@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Awards"
-  url = "#awards"
+  url = "#accomplishments"
   weight = 32
 
 [[main]]
@@ -32,6 +32,11 @@
   name = "Publications"
   url = "#publications"
   weight = 40
+
+[[main]]
+  name = "Advocacy"
+  url = "#advocacy"
+  weight = 50
 
 [[main]]
   name = "Contact"
