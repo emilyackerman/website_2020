@@ -250,6 +250,23 @@ h3 {
     transition: all 0.2s ease-out 0s;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $sta-primary;
+}
+
+.img-link:hover .overlay {
+  opacity: .15;
+}
+
 /*************************************************
  *  Buttons
  **************************************************/
