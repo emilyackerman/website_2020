@@ -2,13 +2,32 @@
 {{ $page := .page }}
 
 <!-- Accomplishments widget -->
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
+<div class="row featurette">
+  <div class="col-12 section-heading">
     <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
     {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
   </div>
-  <div class="col-12 col-lg-8">
+  <div class="col-12 col-lg-6">
     {{ with $page.Content }}{{ . }}{{ end }}
+	<div class="card">
+        <div class = "card-body bio-padding">
+                <p>I am a sixth year PhD student in the University of Pittsburgh’s chemical and petroleum engineering program. My thesis work can be divided into two areas:
+          </p>
+
+        </div>
+        </div>
+
+  </div>
+
+    <div class="col-12 col-lg-6">
+    {{ with $page.Content }}{{ . }}{{ end }}
+        <div class="card">
+        <div class = "card-body bio-padding">
+                <p>I am a sixth year PhD student in the University of Pittsburgh’s chemical and petroleum engineering program. My thesis work can be divided into two areas:
+          </p>
+
+        </div>
+        </div>
 
   </div>
 </div>
