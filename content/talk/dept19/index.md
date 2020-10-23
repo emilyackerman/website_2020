@@ -15,7 +15,7 @@ summary: ""
 
 links:
 - name: Slides
-  url: https://emilyeackerman.netlify.com/files/dept20.pdf
+  url: https://emilyeackerman.com/files/dept20.pdf
 
 # Optional header image (relative to `static/img/` folder).
 header:

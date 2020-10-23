@@ -14,7 +14,7 @@ summary: ""
 
 links:
 - name: Slides
-  url: https://emilyeackerman.netlify.com/files/gsoc_2020.pdf
+  url: https://emilyeackerman.com/files/gsoc_2020.pdf
 
 # Optional header image (relative to `static/img/` folder).
 header:
