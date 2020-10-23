@@ -57,54 +57,6 @@
     </div>
     {{end}}
 
-    <ul class="fa-ul">
-
-      {{ $addr_formatted := "" }}{{/* Scoping for maps. */}}
-      {{ if $data.address.street | or $data.address.city | or $data.address.region | or $data.address.postcode | or $data.address.country }}
-        {{ $addr_formatted = partial "functions/get_address" (dict "root" . "address" $data.address) }}
-        <li>
-          <i style = color:$sta-primary !important; class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-          <span id="person-address">{{$addr_formatted}}</span>
-        </li>
-      {{ end }}
-
-      {{ with $data.directions }}
-      <li>
-        <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
-        <span>{{ . | markdownify | emojify }}</span>
-      </li>
-      {{ end }}
-
-            {{ with $data.appointment_url }}
-      <li>
-        <i class="fa-li fas fa-calendar-check fa-2x" aria-hidden="true"></i>
-        <a href="{{ . }}" target="_blank" rel="noopener">{{ i18n "book_appointment" | default "Book an appointment" }}</a>
-      </li>
-      {{ end }}
-
-      {{/* Contact links. */}}
-      {{ range $data.contact_links }}
-      {{ $pack := or .icon_pack "fas" }}
-      {{ $pack_prefix := $pack }}
-      {{ if in (slice "fab" "fas" "far" "fal") $pack }}
-        {{ $pack_prefix = "fa" }}
-      {{ end }}
-      {{ $link := .link }}
-      {{ $scheme := (urls.Parse $link).Scheme }}
-      {{ $target := "" }}
-      {{ if not $scheme }}
-        {{ $link = .link | relLangURL }}
-      {{ else if in (slice "http" "https") $scheme }}
-        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-      {{ end }}
-      <li>
-        <i class="fa-li {{ $pack }} {{ $pack_prefix }}-{{ .icon }} fa-2x" aria-hidden="true"></i>
-        <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>{{.name|markdownify|emojify|safeHTML}}</a>
-      </li>
-      {{ end }}
-
-    </ul>
-
     {{ if and site.Params.map.engine $data.coordinates.latitude }}
     <div class="d-none">
       <input id="map-provider" value="{{ site.Params.map.engine }}">
@@ -123,17 +75,17 @@
               <p class="btn-articles"><a href="/files/cv.pdf" class="btn"><b>Curriculum Vitae</b></i></a></p>
           </li> &emsp;
           <li>
-            <a href="mailto:eea16@pitt.edu" style="color:$sta-menu-text;font-size:1.6rem;border-bottom:none;">
+            <a href="mailto:eea16@pitt.edu" aria-label="Email" style="color:$sta-menu-text;font-size:1.6rem;border-bottom:none;">
               <i class="fas fa-envelope md-icon"></i>
             </a> &ensp;
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/emily-ackerman-61716063/" style="color:$sta-menu-text;font-size:1.6rem;border-bottom:none;">
+            <a href="https://www.linkedin.com/in/emily-ackerman-61716063/" aria-label="LinkedIn" style="color:$sta-menu-text;font-size:1.6rem;border-bottom:none;">
               <i class="fab fa-linkedin-in md-icon"></i>
             </a> &ensp;
           </li>
           <li>
-            <a href="https://twitter.com/EmilyEAckerman" style="color:$sta-menu-text;font-size:1.6rem;border-bottom:none;">
+            <a href="https://twitter.com/EmilyEAckerman" aria-label="Twitter" style="color:$sta-menu-text;font-size:1.6rem;border-bottom:none;">
               <i class="fab fa-twitter md-icon"></i>
             </a>
           </li>
