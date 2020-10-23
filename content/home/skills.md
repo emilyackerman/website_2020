@@ -30,7 +30,7 @@ subtitle = ""
   icon = "users"
   icon_pack = "fas"
   name = "Diversity and Equity Work"
-  description = "Dedication to improving the academic environment"
+  description = "Advocacy for underrepresented populations in academia, particularly for the disabled"
 
 # Uncomment to use emoji icons.
 # [[feature]]
