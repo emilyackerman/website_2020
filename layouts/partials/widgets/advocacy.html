@@ -7,9 +7,8 @@
     <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
     {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
   </div>
-
-  <div class="col-12 mb-1">
     {{ with $page.Content }}{{ . }}{{ end }}
+  <div class="col-12 mb-1">
         <div class="card">
         <div class = "card-body bio-padding">
 		<p> General statement </p>
@@ -30,28 +29,6 @@
 	    <p><a href="https://www.bloomberg.com/news/articles/2019-11-19/why-tech-needs-more-designers-with-disabilities">
 			<img border="0" alt="My Fight With a Sidewalk Robot. A life-threatening encounter with AI technology convinced me that the needs of people with disabilities need to be engineered into our autonomous future." src="media/citylab.png" width="100%" height="100%" border-radius=30%;>
 	    </a></p>
-
-  </div>
-
-  <div class="col-12 col-lg-6 mb-1">
-    {{ with $page.Content }}{{ . }}{{ end }}
-        <div class="card">
-        <div class = "card-body bio-padding">
-                <iframe width="1280" height="480" src="https://www.youtube.com/embed/MZtYriuua3U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        </div>
-
-  </div>
-
-    <div class="col-12 col-lg-6 mb-1">
-    {{ with $page.Content }}{{ . }}{{ end }}
-        <div class="card">
-        <div class = "card-body bio-padding">
-                <p>I am a sixth year PhD student in the University of Pittsburgh’s chemical and petroleum engineering program. My thesis work can be divided into two areas:
-          </p>
-
-        </div>
-        </div>
 
   </div>
 
