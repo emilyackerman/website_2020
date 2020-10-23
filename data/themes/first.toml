@@ -10,7 +10,7 @@ primary = "#505CCD" #blue
 # Menu
 menu_primary = "#FFE9DB" #peach 
 menu_text = "#033B3A"  #dark green 
-menu_text_active = "#A30C4D" #pink
+menu_text_active = "#505CCD" #blue
 menu_title = "#505CCD" #blue
 
 # Backgrounds
