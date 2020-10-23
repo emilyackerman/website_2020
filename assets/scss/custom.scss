@@ -422,7 +422,7 @@ h3 {
   // Set v-padding to 5px to align with 50/70px responsive max navbar heights.
   padding-top: 5px;
   padding-bottom: 5px;
-  font-family: Alegreya;
+  font-family: Galada;
   font-size: 1.8rem;
   font-weight: 900;
   position: relative;
@@ -449,6 +449,7 @@ h3 {
   #navbar-main .main-menu-item {
     text-align: left !important;
     padding-left: 0;
+    padding-right: 0;
   }
   .navbar-collapse {
     z-index: 1031 !important;  // Appear just over navbar.
