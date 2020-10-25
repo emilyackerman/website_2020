@@ -44,7 +44,7 @@ date_format = "Jan 2006"
   Research accomplishments:
   
   * Identified ligands to inhibit HIV GP120-CD4 binding using high-throughput screening methods
-  * Developed novel super- exible docking/scoring method with binding site comparison in Autodock Vina and MOE
+  * Developed novel super-flexible docking/scoring method with binding site comparison in Autodock Vina and MOE
   * Assisted small team in writing an R21 NIH grant proposal
   """
 
