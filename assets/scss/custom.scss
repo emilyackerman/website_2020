@@ -110,10 +110,25 @@ h3 {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@include media-breakpoint-down(md) {
   .column {
     width: 100%;
   }
+}
+
+#center {
+  width: 100%;
+  text-align: center;
+  margin-top: 77px;
+  position: absolute;
+}
+
+.left, .right {
+  width: 50%;
+  height: 100%;
+  display:inline-block;
+  text-align: center;
+  vertical-align:middle;
 }
 
 /*******************************
