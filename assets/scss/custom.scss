@@ -97,7 +97,9 @@ h3 {
 .row::after {
   content: "";
   clear: both;
-  display: table;
+  /*display: table;*/
+  display: flex;
+  align-items: center;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
