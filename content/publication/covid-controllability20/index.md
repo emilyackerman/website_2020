@@ -3,7 +3,7 @@ title: "Network Controllability-Based Prioritization of Candidates for SARS-CoV-
 authors:
 - emily
 - Jason E. Shoemaker
-date: 2019-09-28T00:00:00
+date: 2020-09-28T00:00:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
