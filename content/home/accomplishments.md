@@ -58,4 +58,24 @@ date_format = "Jan 2006"
   date_end = ""
   description = "Network Methods for Identifying Regulators of Influenza A Virus"
 
+[[item]]
+  organization = "Department of Chemical Engineering, University of Pittsburgh"
+  organization_url = ""
+  title = "Dr. James Coull Memorial Fellowship Award"
+  url = ""
+  certificate_url = ""
+  date_start = "2021-02-14"
+  date_end = ""
+  description = "Awarded annually to one senior Ph.D. student"
+
+[[item]]
+  organization = "Swanson School of Engineering, University of Pittsburgh"
+  organization_url = ""
+  title = "Outstanding Research Assistant"
+  url = ""
+  certificate_url = ""
+  date_start = "2019-02-14"
+  date_end = ""
+  description = ""
+
 +++
