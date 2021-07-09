@@ -74,7 +74,7 @@ date_format = "Jan 2006"
   title = "Outstanding Research Assistant"
   url = ""
   certificate_url = ""
-  date_start = "2019-02-14"
+  date_start = "2021-04-14"
   date_end = ""
   description = ""
 
