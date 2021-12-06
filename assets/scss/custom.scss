@@ -61,6 +61,12 @@ h3 {
   font-weight: 700;
 }
 
+mark.bold_bod {
+  font-weight: 900; 
+  background-color: $sta-background;
+  color: $sta-primary;
+}
+
 .article-metadata {
     margin-bottom: 15px;
     overflow: hidden;
