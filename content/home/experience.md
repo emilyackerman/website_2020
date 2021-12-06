@@ -69,7 +69,7 @@ date_format = "Jan 2006"
   location = "Pittsburgh, PA"
   degree = "Ph.D. in Chemical Engineering"
   date_start = "2015-08-25"
-  date_end = ""
+  date_end = "2021-08-14"
   description = """
   Experience:
 
@@ -116,5 +116,16 @@ date_format = "Jan 2006"
   * Create and maintain website and social media
   * Organized mental health sessions at the Howard Hughes Medical Institute's 2020 Gilliam Fellowship meeting
   """
+
+[[experience]]
+  title = "Postdoctoral Researcher"
+  company = "Lahav Lab, Harvard Medical School"
+  company_url = "https://www.lahavlab.com"
+  location = "Boston, MA"
+  date_start = "2021-09-01"
+  date_end = ""
+  description = """Exploring the connection between single cell p53 signalling dynamics and transcriptomics  
+  """
+
 
 +++
