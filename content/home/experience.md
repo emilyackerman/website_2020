@@ -94,8 +94,7 @@ date_format = "Jan 2006"
   description = """Five webinars with disabled speakers to discuss the current state and future of STEM research for disabled researchers"""
 
 [[experience]]
-  title = "Member of the Advisory Committee to the Director - Working Group on Re-envisioning
-NIH-Supported Postdoctoral Training"
+  title = "Member of the Advisory Committee to the Director - Working Group on Re-envisioning NIH-Supported Postdoctoral Training"
   company = "National Institutes of Health (NIH)"
   company_url = "https://acd.od.nih.gov/working-groups/postdocs.html"
   location = ""
@@ -104,8 +103,7 @@ NIH-Supported Postdoctoral Training"
   description = """Engaged with key parties to evaluate the factors contributing to the declining number of U.S. postdoctoral researchers"""
 
 [[experience]]
-  title = "Committee Member for Beyond Compliance: Promoting the Success of People with
-Disabilities in the STEM Workforce"
+  title = "Committee Member for Beyond Compliance: Promoting the Success of People with Disabilities in the STEM Workforce"
   company = "National Academies of Sciences, Engineering, and Medicine (NASEM)"
   company_url = "https://www.nationalacademies.org/our-work/beyond-compliance-promoting-the-success-of-people-with-disabilities-in-the-stem-workforce"
   location = ""
