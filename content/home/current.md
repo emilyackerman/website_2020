@@ -38,8 +38,8 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Disability Advisor"
-  company = "Department of Systems Biology" 
-  degree = "Harvard Medical School"
+  degree = "Department of Systems Biology" 
+  company = "Harvard Medical School"
   company_url = ""
   location = "Boston, MA"
   date_start = "2021-12-01"
