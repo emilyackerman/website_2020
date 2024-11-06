@@ -1,0 +1,103 @@
+{{ $ := .root }}
+{{ $page := .page }}
+
+<!-- Accomplishments widget -->
+<div class="row featurette">
+  <div class="col-12 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+  </div>
+    {{ with $page.Content }}{{ . }}{{ end }}
+  <div class="col-12 mb-1" style="align-self: center">
+        <div class="card">
+        <div class = "card-body bio-padding">
+		<p> As a proud disabled person, I am passionate about equity for the disabled, both inside and outside of academia. I am committed to fighting the often overlooked ableism that is engrained into our institutions, particularly at the intersection of multiple marginalized identities.  </p>
+			<p>
+			<div class="left"><img border="0" alt="A stick figure stands at the bottom of two steps to REPRESENTATION. The first is labeled 'equal access to tech for users' and the second is labeled 'Developer access to industries'" src="media/steps.png" width="100%" height="100%" border-radius=30%;></div>
+			<div class= "right"><img border="0" alt="A cycle with four parts: 1. Better, more accessible tech, 2. Greater access to education, 3. More disabled people in STEM, and 4. More representation in industry" src="media/advocacy_cycle.png" width="100%" height="100%" border-radius=30%;>
+			</div><p>
+		<p>  Driven by an experience with autonomous robots whose inaccessibility poses a tangible threat to the disability community, I am interested in exploring the inequity created by the inaccessibility of tech and education. I believe that representation in STEM and the design process is key, and that it must be addressed at two levels: making tech accessible for the disabled user to gain equitable access to education, and making the tech industry more accessible and supportive for disabled developers. </em> </p>
+	  <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0;  width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed//MZtYriuua3U' frameborder='0' allowfullscreen></iframe></div>
+	</div>
+        </div>
+  <div class="col-12 section-heading">
+    <h2>Writings and Interviews</h2>
+    <h4><i color: $sta-menu-text-active>(Photos are links)</i></h4>
+  </div>
+
+  </div> 
+
+  
+  <div class="col-12 col-lg-6 mb-1" style="align-self: center">
+  <div class="col-12 section-heading">
+    <h3>Disability and Design</h3>
+  </div>
+	  <p><div class="img-link">
+	  {{ with $page.Content }}{{ . }}{{ end }}
+<a href="https://www.bloomberg.com/news/articles/2019-11-19/why-tech-needs-more-designers-with-disabilities">
+                        <img border="0" alt="My Fight With a Sidewalk Robot. A life-threatening encounter with AI technology convinced me that the needs of people with disabilities need to be engineered into our autonomous future. An article for Citylab by Emily Ackerman" src="media/citylab.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+</a></div></p>
+
+<p> <div class="img-link">
+            <a href="https://www.ft.com/content/f5bd21da-33b8-11ea-a329-0bcf87a328f2">
+                        <img border="0" alt="How to design AI that eliminates disability bias. An article for the Financial Times by Alicia Clegg" src="media/ft.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+            </a></div></p>
+
+
+	<p><div class="img-link">
+            <a href="https://megaphone.link/GBH4439180652">
+                        <img border="0" alt="Redefining Accessibility in Design with Disabilities Advocate Emily Ackerman. Girlboss Radio." src="media/girlboss.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+                        </a></div></p>
+
+<div class="card">
+        <div class = "card-body advocacy-padding">
+                <p> I am available for talks, podcasts, consulting, collaborations, and more, <a href="emily_ackerman@hms.harvard.edu"> just ask!</a> </p>
+        </div>
+        </div>
+
+  </div>
+
+    <div class="col-12 col-lg-6 mb-1">
+	      <div class="col-12 section-heading">
+    <h3>On Living Disabled</h3>
+  </div>
+	    <p><div class="img-link">
+		<a href="https://disabilityvisibilityproject.com/2020/11/29/ep-91-disabled-engineers/">
+                        <img border="0" alt="Disability Visibility Project. Posted November 29, 2020. Podcast. Episode 91: Disabled Engineers" src="media/disvispod.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+		</a></div></p>	
+            <p><div class="img-link">
+            <a href="https://disabilityvisibilityproject.com/2021/03/10/my-year-of-nothing-but-everything/">
+                        <img border="0" alt="Disability Visibility Project. My Year of Nothing but Everything. Living in Pennsylvania During COVID-19. Emily Ackerman" src="media/myyear2.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+                        </a></div></p>
+
+<div class="card">
+        <div class = "card-body advocacy-padding">
+                 <div class="col-12 section-heading">
+    <h3>Valuing Disabled Voices in STEM Workshop</h3>
+  </div>
+                <p> In May 2021, I had the privilege of hosting a workshop to highlight the experiences and research of disabled academics. Talks included Dr. Cassandra McCall of Utah State University, Cynthia Bennett of CMU and Apple, and Ashley Shew of Virginia Tech as well as a disabled student panel.</p>
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0;  width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/zupu2L-iI8s' frameborder='0' allowfullscreen></iframe></div>
+        </div>
+        </div>
+
+          <p><div class="img-link">
+          {{ with $page.Content }}{{ . }}{{ end }}
+<a href="https://www.alieward.com/ologies/systemsbiology">
+                        <img border="0" alt="A photo of Emily with the Ologies podcast logo." src="media/Ologies.jpeg" width="100%" height="100%" border-radius=30%; style="align-self:center">
+</a></div></p>
+
+
+    </div>
+
+<!--  <div class="col-12 mb-1">
+    {{ with $page.Content }}{{ . }}{{ end }}    
+    <div class="card">
+        <div class = "card-body advocacy-padding">
+                <p> I am available for talks, podcasts, consulting, collaborations, and more, <a href="mailto:emily_ackerman@hms.harvard.edu"> just ask!</a> </p>
+        </div>
+        </div> -->
+    </div>
+</div>
+
+
+</div>
