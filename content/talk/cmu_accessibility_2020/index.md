@@ -1,7 +1,7 @@
 ---
 date: "2020-04-02T13:00:00"
 publishDate: "2020-04-02T13:00:00"
-buildFuture: true 
+buildFuture: false 
 title: "The Accessibility Gap for Tech Users and Developers"
 event: "CMU Accessibility Group"
 location: "Carnegie Mellon University"
