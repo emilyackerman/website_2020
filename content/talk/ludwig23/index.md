@@ -1,11 +1,11 @@
 ---
-date: "2021-10-04T10:05:00"
-publishDate: "2018-09-22T09:15:00"
+date: "2021-10-04"
+publishDate: "2023-04-03T09:15:00"
 buildFuture: true 
-title: "Interferon Production Rate is a Major Contributor to Differential Strain-Specific Immunodynamics"
+title: "Distinct TP53 mutation spectra in myeloid neoplasms suggest divergent roles in disease initiation and progression"
 subtitle: ""
-event: "5th Workshop on Virus Dynamics"
-location: "Fred Hutchinson Cancer Research Center"
+event: "Ludwig Center Meeting"
+location: "Harvard Medical School"
 draft: false  
 share: false
 commentable: false

@@ -4,3 +4,16 @@
 # Hugo
 /resources/
 public/
+
+.DS_Store
+.gitignore.swp
+.hugo_build.lock
+assets/.DS_Store
+content/.DS_Store
+data/.DS_Store
+layouts/partials/widgets/old_advocacy.html
+node_modules/
+package-lock.json
+package.json
+static/.DS_Store
+static/files/.DS_Store
