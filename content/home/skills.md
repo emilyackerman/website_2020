@@ -15,6 +15,12 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
+  icon = "dna"
+  icon_pack = "fas"
+  name = "Single-Cell Sequencing Analysis"
+  description = "Analysis of the evolution of timeseries scRNAseq data"
+
+[[feature]]
   icon = "calculator"
   icon_pack = "fas"
   name = "Mathematical Modeling"
@@ -30,7 +36,7 @@ subtitle = ""
   icon = "users"
   icon_pack = "fas"
   name = "Diversity and Equity Work"
-  description = "Advocacy for underrepresented populations in academia, particularly the disabled"
+  description = "Advocacy for underrepresented populations in science, particularly the disabled"
 
 # Uncomment to use emoji icons.
 # [[feature]]
