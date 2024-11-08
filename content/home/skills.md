@@ -21,6 +21,11 @@ subtitle = ""
 #  description = "Methods to quantify the evolution of time series scRNAseq data"
 
 [[feature]]
+  icon = "chart-line"
+  icon_pack = "fas"
+  name = "Time series clustering"
+
+[[feature]]
   icon = "calculator"
   icon_pack = "fas"
   name = "Mathematical Modeling"
