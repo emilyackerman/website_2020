@@ -37,10 +37,10 @@ subtitle = ""
   name = "Network Biology"
 #  description = "Protein and gene networks to identify disease host factors and drug opportunities"  
   
-[[feature]]
-  icon = "users"
-  icon_pack = "fas"
-  name = "Diversity and Equity Work"
+#[[feature]]
+#  icon = "users"
+#  icon_pack = "fas"
+#  name = "Diversity and Equity Work"
 #  description = "Advocacy for underrepresented populations in STEM"
 
 # Uncomment to use emoji icons.
