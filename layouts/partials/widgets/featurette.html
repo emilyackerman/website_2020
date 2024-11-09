@@ -10,12 +10,8 @@
   {{ end }}
 
   {{ with $page.Content }}
-  <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-        {{ . }}
-      </div>
-    </div>
+  <div class="col-md-12">
+    {{ . }}
   </div>
   {{ end }}
 
@@ -25,7 +21,7 @@
   {{ if in (slice "fab" "fas" "far" "fal") $pack }}
     {{ $pack_prefix = "fa" }}
   {{ end }}
-  <div class="col-12 col-sm-2">
+  <div class="col-12 col-sm-1">
     {{ with .icon }}
     <div class="featurette-icon">
       {{- if eq $pack "emoji" -}}
