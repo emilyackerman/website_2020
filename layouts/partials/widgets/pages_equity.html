@@ -72,8 +72,26 @@
 {{ end }}
 
 {{ $columns := $st.Params.design.columns | default "2" }}
-<div class="container">
+
+<div class="row featurette">
   <div class="col-12 section-heading">
+    <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $page.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+     </div>
+    {{ with $page.Content }}{{ . }}{{ end }}
+  <div class="row justify-content-center">
+    <div class="col-10 mb-1" style="align-self: center">
+          <div class="card">
+          <div class = "card-body bio-padding">
+      <p> As a proud disabled person, I am passionate about equity for the disabled, both inside and outside of academia. I am committed to fighting the often overlooked ableism that is engrained into our institutions, particularly at the intersection of multiple marginalized identities.  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+<div class="container">
+  <div class="col-12 section-heading justify-content-center">
       <h2 class="bluetitle">Select Invited Talks</h2>
     </div>
 <div class="row justify-content-center">
