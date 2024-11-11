@@ -1,5 +1,5 @@
 ---
-title: Science Talks
+title: Equity Talks
 
 # View.
 #   1 = List
