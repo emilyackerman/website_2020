@@ -15,6 +15,8 @@ summary: ""
 links:
 - name: Slides
   url: https://emilyeackerman.com/files/cmu_accessibility_2020.pdf
+- name: Video 
+  url: https://youtu.be/MZtYriuua3U
 
 # Optional header image (relative to `static/img/` folder).
 header:
