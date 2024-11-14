@@ -10,15 +10,15 @@ authors:
 superuser: true
 
 # Role/position
-role: Ph.D. Candidate
+role: Postdoctoral Researcher 
 
 # Organizations/Affiliations
 organizations:
-- name: University of Pittsburgh
+- name: Harvard Medical School 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Sixth year Ph.D candidate in Chemical Engineering looking toward a future professorship with special interest in the advancement of underrepresented groups 
+bio: Computational researcher with wide-ranging skill set including network biology, mathematical modeling, and single cell sequencing methods. Experience with viral infection and cancer applications. Committed to creating an equitable scientific enterprise for all.
 
 interests:
 - Systems biology
@@ -42,7 +42,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:eea16@pitt.edu'
+  link: 'mailto:emily_ackerman@hms.harvard.edu'
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/EmilyEAckerman
@@ -56,7 +56,7 @@ social:
   link: files/emily_ackerman_cv.pdf
 - icon: desktop
   icon_pack: fas
-  link: https://www.emilyeackerman.netlify.com
+  link: https://www.emilyeackerman.com
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -71,19 +71,4 @@ user_groups:
 - Visitors
 ---
 
-
-Emily Ackerman is a sixth year PhD student in the University of Pittsburgh's Chemical and Petroleum Engineering program. Her research includes controllability of influenza A and SARS-CoV-2 virus-host protein interaction networks and immune response modeling during influenza A infection. As a disabled, queer woman in STEM, she is passionate about the advancement of minorities in STEM fields. In her free time, she enjoys painting, organizing with her fellow grad workers, and spending time with her cat, Poppy.
-
-* **Board of Directors**, [Future of Research](https://www.futureofresearch.org/), Labor Task Force
-* **Co-founder**, [TAE (Transforming Academic Ecosystems) Consortium](TAEconsortium.netlify.com)
-
-# Honors 
-
-* **Gilliam Fellow**, James H. Gilliam Fellowships for Advanced Study program, Howard Hughes Medical Institute
-* **Honorable Mention**, National Science foundation's Graduate Research Fellowship Program
-
-# Disability and Technology 
-
-* [**My Fight With a Sidewalk Robot**](https://www.citylab.com/perspective/2019/11/autonomous-technology-ai-robot-delivery-disability-rights/602209/?preview=CV0C14y8yNT7letbOsOd4kJwvoI), by Emily Ackerman, CityLab, Nov, 2019
-* [**How to design AI that eliminates disability bias**](https://www.ft.com/content/f5bd21da-33b8-11ea-a329-0bcf87a328f2), Feature by Alicia Clegg, Financial Times, Jan, 2020
 
