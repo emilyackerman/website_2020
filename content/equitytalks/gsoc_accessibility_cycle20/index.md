@@ -1,6 +1,6 @@
 ---
 date: "2020-09-29T12:00:00"
-publishDate: "2218-09-22T09:15:00"
+publishDate: "3018-09-22T09:15:00"
 buildFuture: false 
 title: "The Accessibility and Tech Cycle"
 event: "STEM and Society Lectures, Graduate Student Organizing Committee"
