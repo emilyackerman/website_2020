@@ -42,7 +42,6 @@ subtitle = ""
   #   5 = equity compact
   view = 5
 
-  columns = 1
   
 [design.background]
   # Apply a background color, gradient, or image.
