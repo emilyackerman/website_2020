@@ -15,7 +15,7 @@
 
 [[main]]
   name = "Experience"
-  url = "#experience"
+  url = "#current"
   weight = 30
 
 [[main]]
@@ -24,18 +24,18 @@
   weight = 32
 
 [[main]]
-  name = "Talks"
+  name = "Sci Talks"
   url = "#talks"
   weight = 34
 
 [[main]]
-  name = "Publications"
+  name = "Pubs"
   url = "#publications"
   weight = 40
 
 [[main]]
-  name = "Advocacy"
-  url = "#advocacy"
+  name = "Equity Work"
+  url = "#equity"
   weight = 50
 
 [[main]]

@@ -1,0 +1,252 @@
+{{/* equity Widget */}}
+
+{{/* Initialise */}}
+{{ $ := .root }}
+{{ $st := .page }}
+{{ $items_type := $st.Params.content.page_type | default "post" }}
+{{ $items_offset := $st.Params.content.offset | default 0 }}
+{{ $items_count := $st.Params.content.count }}
+{{ if eq $items_count 0 }}
+  {{ $items_count = 65535 }}
+{{ else }}
+  {{ $items_count = $items_count | default 5 }}
+{{ end }}
+{{ $items_sort := $st.Params.content.order | default "desc" }}
+
+{{/* Query */}}
+{{ $query := where site.RegularPages "Type" $items_type }}
+{{ $archive_page := site.GetPage "Section" $items_type }}
+
+{{/* Filters */}}
+{{ if $st.Params.content.filters.tag }}
+  {{ $archive_page = site.GetPage (printf "tags/%s" (urlize $st.Params.content.filters.tag)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $st.Params.content.filters.category }}
+  {{ $archive_page = site.GetPage (printf "categories/%s" (urlize $st.Params.content.filters.category)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $st.Params.content.filters.publication_type }}
+  {{ $archive_page = site.GetPage (printf "publication_types/%s" $st.Params.content.filters.publication_type) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $st.Params.content.filters.author }}
+  {{ $archive_page = site.GetPage (printf "authors/%s" (urlize $st.Params.content.filters.author)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $st.Params.content.filters.exclude_featured }}
+  {{ $query = where $query "Params.featured" "!=" true }}
+{{ end }}
+{{ if $st.Params.content.filters.exclude_past }}
+  {{ $query = where $query "Date" ">=" now }}
+{{ end }}
+{{ if $st.Params.content.filters.exclude_future }}
+  {{ $query = where $query "Date" "<" now }}
+{{ end }}
+
+{{ $count := len $query }}
+
+{{/* Sort */}}
+{{ $sort_by := "Date" }}
+{{ $query = sort $query $sort_by $items_sort }}
+
+{{/* Offset and Limit */}}
+{{ if gt $items_offset 0 }}
+  {{ $query = first $items_count (after $items_offset $query) }}
+{{ else }}
+  {{ $query = first $items_count $query }}
+{{ end }}
+
+{{/* Localisation */}}
+{{ $i18n := "" }}
+{{ if eq $items_type "post" }}
+  {{ $i18n = "more_posts" }}
+{{ else if eq $items_type "talk" }}
+  {{ $i18n = "more_talks" }}
+{{ else if eq $items_type "equitytalks" }}
+  {{ $i18n = "more_talks" }}
+{{ else if eq $items_type "publication" }}
+  {{ $i18n = "more_publications" }}
+{{ else }}
+  {{ $i18n = "more_pages" }}
+{{ end }}
+
+{{ $columns := $st.Params.design.columns | default "2" }}
+
+<!-- top box (Accomplishments widget) -->
+<div class="row featurette">
+  <div class="col-12 section-heading">
+    <h1>{{ with $st.Title }}{{ . | markdownify }}{{ end }}</h1>
+    {{ with $st.Params.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+     </div>
+    {{ with $st.Content }}{{ . }}{{ end }}
+  <div class="row justify-content-center">
+    <div class="col-10 mb-1" style="align-self: center">
+          <div class="card">
+          <div class = "card-body bio-padding">
+      <p>I believe that good science can only be done in an environment that constantly strives toward equitable access and practices. I am committed to fighting the often overlooked injustices engrained into our institutions, particularly at the intersection of multiple marginalized identities.</p>
+      <p>  In 2019, my disability advocacy and professional worlds collided after a dangerous run-in with autonomous delivery robots. This experience spurred my interest in exploring the how academic inaccessibility and quickly evolving, inaccessible tech feed into one another, and how best to remedy them without using disabled people as collateral.</p>
+      <p>
+        <div class="left"><img border="0" alt="A stick figure stands at the bottom of two steps to REPRESENTATION. The first is labeled 'equal access to tech for users' and the second is labeled 'Developer access to industries'" src="media/steps.png" width="100%" height="100%" border-radius=30%;></div>
+        <div class= "right"><img border="0" alt="A cycle with four parts: 1. Better, more accessible tech, 2. Greater access to education, 3. More disabled people in STEM, and 4. More representation in industry" src="media/advocacy_cycle.png" width="100%" height="100%" border-radius=30%;>
+        </div></p>
+      <p>Around the same time, I was heavily involved in our graduate student unionization campaign, and joined the Future of Research board of directors to lead the Labor Task Force, both of which drove my commitment toward addressing the absence of fair and equitable labor practices in science institutions, particularly for early career researchers, to new heights. </p>
+      <p>Since then, my commitment to equitable science has only continued to grow. I have served as a member of two NASEM projects aiming to improve and re-envision accessibility in STEM, and as a member of the NIH working group to assess the status of US postdoctoral training. I currently serve as the Disability Advisor for the systems biology department at Harvard. As an individual, I enjoy writing and speaking broadly on my identity and vision for a more equitable and accessible scientific enterprise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<!-- talks section -->
+<div class="container">
+  <div class="row justify-content-center">
+  <div class="col-11 section-heading justify-content-center" style="align-self: center">
+      <h2 class="bluetitle">Select Invited Talks</h2>
+    </div>
+  </div>
+<div class="row justify-content-center">
+  <div class="col-12 col-lg-10">
+
+    {{ with $st.Content }}{{ . }}{{ end }}
+
+    {{ range $post := $query }}
+      {{ if eq $st.Params.design.view 1 }}
+        {{ partial "li_list" . }}
+      {{ else if eq $st.Params.design.view 3 }}
+        {{ partial "li_card" . }}
+      {{ else if eq $st.Params.design.view 4 | and (eq $items_type "publication") }}
+        {{ partial "li_citation" . }}
+      {{ else if eq $st.Params.design.view 5 }}
+        {{ partial "li_compact_equity" . }}
+      {{ else }}
+        {{ partial "li_compact" . }}
+      {{ end }}
+    {{end}}
+
+    {{/* Archive link */}}
+    {{ $show_archive_link := $st.Params.content.archive.enable | default (gt $count $items_count) }}
+    {{ if $show_archive_link }}
+
+      {{ $archive_link := "" }}
+      {{ if $st.Params.content.archive.link }}
+        {{ $archive_link = $st.Params.content.archive.link | relLangURL }}
+      {{ else }}
+        {{ $archive_link = $archive_page.RelPermalink }}
+      {{ end }}
+
+      {{ $archive_text := $st.Params.content.archive.text | default (i18n $i18n) | default "See all" }}
+
+      <div class="see-all">
+        <a href="{{ $archive_link }}">
+          {{ $archive_text | emojify }}
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </div>
+    {{ end }}
+
+  </div>
+
+</div>
+  <!-- <div class="row justify-content-center">
+    <div class="col-10 mb-1" style="align-self: center">
+          <div class="card">
+          <div class = "card-body bio-padding" style="align-self: center">      
+      <p>  In 2019, my disability self-advocacy and professional worlds collided after a dangerous run-in with autonomous delivery robots. This experience spurred my interest in exploring the how academic inaccessibly and quickly evolving, inaccessible tech feed into one another, and how best to remedy them without using disabled people as collateral.</p>
+      <p>
+        <div class="left"><img border="0" alt="A stick figure stands at the bottom of two steps to REPRESENTATION. The first is labeled 'equal access to tech for users' and the second is labeled 'Developer access to industries'" src="media/steps.png" width="100%" height="100%" border-radius=30%;></div>
+        <div class= "right"><img border="0" alt="A cycle with four parts: 1. Better, more accessible tech, 2. Greater access to education, 3. More disabled people in STEM, and 4. More representation in industry" src="media/advocacy_cycle.png" width="100%" height="100%" border-radius=30%;>
+        </div></p>
+      <p>Around the same time, I was heavily involved in the graduate student unionization campaign, and joined the Future of Research board of directors to lead the Labor Task Force, both of which drove my commitment toward addressing the long standing absence of fair and equitable labor practices in our science institutions, particularly for early career researchers. </p>
+      <p>Since, my commitment to equitable science has continued to grow. I have served as a member of two NASEM projects aiming to address disability issues and as a member of the NIH working group on the status of postdoctoral training in the US, and currently serve as the disability advisor for the systems biology department at Harvard. I have published writings and spoken publicly on my identity and experiences, and my vision for a more accessible scientific enterprise.</p>-->
+
+<!--       <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0;  width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed//MZtYriuua3U' frameborder='0' allowfullscreen></iframe></div> -->
+         <!-- </div>
+            </div>
+
+    </div> 
+  </div>  -->
+</div>
+
+<!-- writing section (Accomplishments widget) -->
+<div class="row featurette">
+  <div class="col-12 section-heading">
+      <h2 class="bluetitle">Writings and Interviews</h2>
+      <h4><i color: $sta-menu-text-active>(Photos are links)</i></h4>
+    </div>
+  <div class="row"> 
+    <div class="col-12 col-lg-4 mb-1" style="align-self: center">
+      <p><div class="img-link">
+      {{ with $st.Content }}{{ . }}{{ end }}
+        <a href="https://www.bloomberg.com/news/articles/2019-11-19/why-tech-needs-more-designers-with-disabilities">
+                          <img border="0" alt="My Fight With a Sidewalk Robot. A life-threatening encounter with AI technology convinced me that the needs of people with disabilities need to be engineered into our autonomous future. An article for Citylab by Emily Ackerman" src="media/citylab.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+        </a></div></p>
+    </div>
+
+    <div class="col-12 col-lg-4 mb-1" style="align-self: center">
+        <p><div class="img-link">
+      <a href="https://disabilityvisibilityproject.com/2020/11/29/ep-91-disabled-engineers/">
+                          <img border="0" alt="Disability Visibility Project. Posted November 29, 2020. Podcast. Episode 91: Disabled Engineers" src="media/disvispod.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+      </a></div></p>  
+    </div>
+
+
+      <div class="col-12 col-lg-4 mb-1"> 
+              <p><div class="img-link">
+              <a href="https://disabilityvisibilityproject.com/2021/03/10/my-year-of-nothing-but-everything/">
+                          <img border="0" alt="Disability Visibility Project. My Year of Nothing but Everything. Living in Pennsylvania During COVID-19. Emily Ackerman" src="media/myyear2.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+                          </a></div></p>
+      </div>
+
+
+      </div>
+
+<!-- </div> -->
+
+
+
+<!-- Accomplishments widget -->
+<!-- <div class="row featurette"> -->
+  <div class="row justify-content-center"> 
+    <div class="col-12 col-lg-3 mb-1" style="align-self: center">
+
+    <p><div class="img-link">
+              <a href="https://megaphone.link/GBH4439180652">
+                          <img border="0" alt="Redefining Accessibility in Design with Disabilities Advocate Emily Ackerman. Girlboss Radio." src="media/girlboss.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+                          </a></div></p>
+    </div>
+
+    <div class="col-12 col-lg-4 mb-1" style="align-self: center">
+  <p> <div class="img-link">
+              <a href="https://www.ft.com/content/f5bd21da-33b8-11ea-a329-0bcf87a328f2">
+                          <img border="0" alt="How to design AI that eliminates disability bias. An article for the Financial Times by Alicia Clegg" src="media/ft.png" width="100%" height="100%" border-radius=30%; style="align-self:center">
+              </a></div></p>
+
+    </div>
+
+
+      <div class="col-12 col-lg-3 mb-1">
+            <p><div class="img-link">
+            {{ with $st.Content }}{{ . }}{{ end }}
+  <a href="https://www.alieward.com/ologies/systemsbiology">
+                          <img border="0" alt="A photo of Emily with the Ologies podcast logo." src="media/Ologies.jpeg" width="100%" height="100%" border-radius=30%; style="align-self:center">
+  </a></div></p>
+
+
+      </div>
+
+
+      </div>
+  <div class="container">
+  <div class="row justify-content-center">
+        <div class="col-8 mb-1" style="align-self: center">
+            <div class="card">
+                <div class = "card-body advocacy-padding">
+                        <p> I am available for talks, podcasts, consulting, collaborations, and more, <a href="mailto:emily_ackerman@hms.harvard.edu"> just ask!</a> </p>
+                </div>
+                </div>
+            </div>
+      </div>
+    </div>
+
+</div>

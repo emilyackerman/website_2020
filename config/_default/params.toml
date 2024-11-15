@@ -88,7 +88,7 @@ show_related = {docs = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "eea16@pitt.edu"
+email = "emily_ackerman@hms.harvard.edu"
 phone = ""
 
 # Address

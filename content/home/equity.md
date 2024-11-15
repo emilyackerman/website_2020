@@ -1,21 +1,21 @@
 +++
 # A Recent and Upcoming Talks section created with the Pages widget.
-# This section displays recent talks from `content/talk/`.
+# This section displays recent talks from `content/equitytalks/`.
 
-widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
+widget = "pages_equity"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 70  # Order that this section will appear.
+weight = 100  # Order that this section will appear.
 
-title = "Science Talks"
+title = "Equity Work"
 subtitle = ""
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "talk"
+  page_type = "equitytalks"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 0
   
   # Choose how many pages you would like to offset by
   offset = 0
@@ -39,7 +39,9 @@ subtitle = ""
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 2
+  #   5 = equity compact
+  view = 5
+
   
 [design.background]
   # Apply a background color, gradient, or image.

@@ -5,21 +5,9 @@
 
 {{ $columns := $st.Params.design.columns | default "2" }}
 
-<div class="row contact-widget {{if not $st.Title | or (eq $columns "1") }}justify-content-center{{end}}">
-  {{ if $st.Title }}
-    {{ if eq $columns "1" }}
-      <div class="col-12 col-lg-8 section-heading text-center">
-        {{ with $st.Title }}<h1>{{.}}</h1>{{ end }}
-        {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
-      </div>
-    {{else}}
-      <div class="col-12 col-lg-4 section-heading">
-        {{ with $st.Title }}<h1>{{.}}</h1>{{ end }}
-        {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
-      </div>
-    {{end}}
-  {{ end }}
-  <div class="col-12 col-lg-8">
+<div class="container">
+  <div class="row justify-content-center">
+  <div class="col-12 col-lg-12">
     {{ with $st.Content }}{{ . }}{{ end }}
 
     {{ if $st.Params.email_form }}
@@ -57,6 +45,7 @@
     </div>
     {{end}}
 
+      <div class="row justify-content-center">
 
           <ul class="network-icon" aria-hidden="true">
           <li>
@@ -78,6 +67,8 @@
             </a>
           </li>
         </ul>
+      </div>
 
   </div> 
   </div>
+</div>
