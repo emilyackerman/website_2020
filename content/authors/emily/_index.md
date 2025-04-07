@@ -42,7 +42,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:emily_ackerman@hms.harvard.edu'
+  link: 'mailto:eeackerman@gmail.com'
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/EmilyEAckerman
@@ -53,7 +53,7 @@ social:
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: file-alt
   icon_pack: fas
-  link: files/emily_ackerman_cv.pdf
+  link: files/cv_2025.pdf
 - icon: desktop
   icon_pack: fas
   link: https://www.emilyeackerman.com

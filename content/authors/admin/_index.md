@@ -1,41 +1,39 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Emily E. Ackerman
 
 # Username (this should match the folder name)
 authors:
-- admin
+- emily
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Postdoctoral Researcher 
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: Harvard Medical School 
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Computational researcher with wide-ranging skill set including network biology, mathematical modeling, and single cell sequencing methods. Experience with viral infection and cancer applications. Committed to creating an equitable scientific enterprise for all.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Systems biology
+- Protein network modeling
+- Mathematical modeling
+- Virus-host interactions
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Ph.D. in Chemical Engineering
+    institution: University of Pittsburgh
+    year: Summer 2021 
+  - course: B.S. in Chemical Engineering
+    institution: Rensselaer Polytechnic Institute
+    year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,21 +42,21 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:eeackerman@gmail.com'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
+  link: https://twitter.com/EmilyEAckerman
+- icon: linkedin-in
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://www.linkedin.com/in/emily-ackerman-61716063/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+- icon: file-alt
+  icon_pack: fas
+  link: files/cv_2025.pdf
+- icon: desktop
+  icon_pack: fas
+  link: https://www.emilyeackerman.com
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -73,6 +71,3 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
