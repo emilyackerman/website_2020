@@ -14,7 +14,7 @@ summary: ""
 
 links:
 - name: Slides
-  url: https://emilyeackerman.com/files/NASEMDEI23.pdf
+  url: 
 
 # Optional header image (relative to `static/img/` folder).
 header:

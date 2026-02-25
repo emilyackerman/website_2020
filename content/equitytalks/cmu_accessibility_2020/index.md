@@ -14,7 +14,7 @@ summary: ""
 
 links:
 - name: Slides
-  url: https://emilyeackerman.com/files/cmu_accessibility_2020.pdf
+  url: 
 - name: Video 
   url: https://youtu.be/MZtYriuua3U
 
