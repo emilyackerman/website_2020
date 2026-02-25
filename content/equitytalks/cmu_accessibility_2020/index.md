@@ -13,8 +13,6 @@ editable: false
 summary: ""
 
 links:
-- name: Slides
-  url: 
 - name: Video 
   url: https://youtu.be/MZtYriuua3U
 

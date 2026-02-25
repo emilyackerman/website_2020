@@ -13,8 +13,6 @@ editable: false
 summary: ""
 
 links:
-- name: Slides
-  url: 
 
 # Optional header image (relative to `static/img/` folder).
 header:
